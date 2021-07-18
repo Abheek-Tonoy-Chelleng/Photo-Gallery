@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src=""></script>
+</head>
+
+<body>
+    <h1>Welcome to my Photo Gallery</h1>
+    <img id="Logo" src="data:image/jpeg;base64,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">
+    <h2>Grid Gallery</h2>
+    <div class="cars">
+        <img src="Assassins%20Creed.jpg">
+        <img src="Minecraft.jpg">
+        <img src="Fortnite.jpg">
+        <img src="Red%20Dead%20Redemption.jpg">
+        <img src="Cyberpunk.jpg">
+        <img src="Dying%20Light%202.jpg">
+        <img src="Watch%20Dogs%20Legion.jpg">
+        <img src="Hitman%203.jpg">
+        <img src="PUBG.jpg">
+    </div>
+    <h3>Sliding Gallery</h3>
+    <div id="mycarousel" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="item active">
+                <center>
+                    <img class="img-responsive" src="Prince%20of%20Persia.jpg">
+                    <div class="carousel-content">
+                        <p>Prince of Persia The Sans of Time Remake</p>
+                    </div>
+                </center>
+            </div>
+            <div class="item">
+                <center>
+                    <img id="img-responsive" src="Resident%20Evil%203.jpg">
+                    <div class="carousel-content">
+                        <p>Resident Evil 3</p>
+                    </div>
+                </center>
+            </div>
+            <div class="item">
+                <center>
+                    <img id="img-responsive" src="Gta%20V.jpg">
+                    <div class="carousel-content">
+                        <p>GTA V</p>
+                    </div>
+                </center>
+            </div>
+            <div class="item">
+                <center>
+                    <img id="img-responsive" src="Half%20Life%203.jpg">
+                    <div class="carousel-content">
+                        <p>Half Life 3</p>
+                    </div>
+                </center>
+            </div>
+            <div class="item">
+                <center>
+                    <img id="img-responsive" src="Control.jpg">
+                    <div class="carousel-content">
+                        <p>Control</p>
+                    </div>
+                </center>
+            </div>
+            <div class="item">
+                <center>
+                    <img id="img-responsive" src="Free%20Fire.jpg">
+                    <div class="carousel-content">
+                        <p>Free Fire</p>
+                    </div>
+                </center>
+            </div>
+            <div class="item">
+                <center>
+                    <img id="img-responsive" src="GOD%20OF%20WAR.jpg">
+                    <div class="carousel-content">
+                        <p>God of War</p>
+                    </div>
+                </center>
+            </div>
+            <div class="item">
+                <center>
+                    <img id="img-responsive" src="Call%20of%20Duty%20Mobile.jpg">
+                    <div class="carousel-content">
+                        <p>Call of Duty Mobile</p>
+                    </div>
+                </center>
+            </div>
+            <div class="item">
+                <center>
+                    <img id="img-responsive" src="Sleeping%20Dogs.jpg">
+                    <div class="carousel-content">
+                        <p>Sleeping Dogs</p>
+                    </div>
+                </center>
+            </div>
+            <a class="left carousel-control" href="#mycarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left">
+                </span>
+            </a>
+            <a class="right carousel-control" href="#mycarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right">
+                </span>
+            </a>
+            <ol class="carousel-indicators">
+                <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#mycarousel" data-slide-to="1"></li>
+                <li data-target="#mycarousel" data-slide-to="2"></li>
+                <li data-target="#mycarousel" data-slide-to="3"></li>
+                <li data-target="#mycarousel" data-slide-to="4"></li>
+                <li data-target="#mycarousel" data-slide-to="5"></li>
+                <li data-target="#mycarousel" data-slide-to="6"></li>
+                <li data-target="#mycarousel" data-slide-to="7"></li>
+                <li data-target="#mycarousel" data-slide-to="8"></li>
+            </ol>
+        </div>
+    </div>
+</body>
+
+</html>
